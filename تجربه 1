@@ -1,15 +1,15 @@
 /*
 بوت حمايه قنوات لجميع القروبات 
 
-channel : @hayday12838
-Developer :@hayday12838_bot
+channel : @stwrdummio_bot
+Developer :@stwrdummio_bot
 #༒ mostafa jwan ☬
 
 */
 <?php
 ob_start();
 error_reporting(0);843358054
-define('API_KEY',':7898884759:AAFj6Ejl4rE2FsbVg7Q2Ma56EIs8aO6pkKc');
+define('API_KEY',':7465636460:AAGLarNtMFi7WUpepK-7UyZTdU1XnFgdTK8');
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -25,8 +25,8 @@ function bot($method,$datas=[]){
 }
 $Dev = array("5479967213","5479967213","5479967213"); //ID ADMIN NUMBER 1 HE CHAT
 
-@$usernamebot = "@hayday12838_bot"; //UserName Bot
-@$channel = "hayday12838"; // UserName Channel don't @
+@$usernamebot = " @stwrdummio_bot"; //UserName Bot
+@$channel = " @stwrdummio_bot"; // UserName Channel don't @
 @$token = API_KEY;
 $update = json_decode(file_get_contents('php://input'));
 @$message = $update->message;
@@ -9281,7 +9281,7 @@ if ( $status == 'creator' or $status == 'administrator' or in_array($from_id,$De
 if (  strpos($text , 'تنظيف') !== false  ) {
 if ( $status == 'creator' or $status == 'administrator' or in_array($from_id,$Dev) or in_array($from_id,$getCCmember) or in_array($from_id,$useradmin)){
 $num = str_replace(['/rmsg ','تنظيف'],'',$text);
-if ($num <= 100 && $num >= 1){
+if ($num <= 50 && $num >= 1){
 $add = $settings["information"]["added"];
 if ($add == true) {
 for($i=$message_id; $i>=$message_id-$num; $i--){
